@@ -1,3 +1,23 @@
-= Blorgh
+== README
 
-This project rocks and uses MIT-LICENSE.
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+How to Use mountable Engine 'Blorgh' in other rails application.
+
+1. Add in gem file as
+     gem 'blorgh',  github: "prashant1988/blorgh-"
+2. Update in routes
+     mount Blorgh::Engine, at: "/blog"
+3. bundle install
+4. rake blorgh:install:migrations          # Copy migrations from blorgh to application 
+5. rake db:migrate 
+6. rails s     
+
+
+===
+
+we can run our mutable engine application through
+-->   engine_application\test\dummy$  rails s
+
+
