@@ -18,6 +18,6 @@ How to Use mountable Engine 'Blorgh' in other rails application.
 ===
 
 we can run our mutable engine application through
--->   engine_application\test\dummy$  rails s
+-->   engine_application/test/dummy$  rails s
 
 
