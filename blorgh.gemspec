@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = Blorgh::VERSION
   s.authors     = ["prashant"]
   s.email       = ["prashant1988mishra@gmail.com"]
-  s.homepage    = "https://github.com/prashant1988/blorgh"
+  s.homepage    = "https://github.com/prashant1988/blorgh-"
   s.description = "Its Rails moutable engine for bloging application."
   s.summary     = s.description
   s.license     = "MIT"
