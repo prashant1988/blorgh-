@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blorgh</title>
+  <%= stylesheet_link_tag    "blorgh/application", media: "all" %>
+  <%= javascript_include_tag "blorgh/application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	
+	<% if master_signed_in? %>
+	  Logged in as <strong><%= current_master.email %></strong>.
+	  <ul class="nav nav-tabs">
+	    <!-- <li><%#= link_to 'Edit profile', edit_master_registration_path, :class => 'navbar-link' %> </li> -->
+	    <li><%= link_to "Logout", destroy_master_session_path, method: :delete, :class => 'navbar-link'  %></li>
+	  </ul>
+	<% else %>
+	  <ul class="nav nav-tabs">
+	    <li><%= link_to "Sign up", 'sign_up', :class => 'navbar-link'  %></li>
+	    <li><%= link_to "Login", 'sign_in', :class => 'navbar-link'  %></li>
+	  </ul>
+	<% end %>
+
+<%= yield %>
+
+</body>
+</html>
