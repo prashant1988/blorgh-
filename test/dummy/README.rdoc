@@ -3,26 +3,13 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
+How to Use mountable Engine 'Blorgh' in other rails application.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+1. Add in gem file as
+     gem 'blorgh',  github: "prashant1988/blorgh-"
+2. Update in routes
+     mount Blorgh::Engine, at: "/blog"
+3. bundle install
+4. rake blorgh:install:migrations          # Copy migrations from blorgh to application 
+5. rake db:migrate 
+6. rails s     
