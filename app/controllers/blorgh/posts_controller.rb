@@ -3,6 +3,7 @@ require_dependency "blorgh/application_controller"
 module Blorgh
   class PostsController < ApplicationController
     before_action :set_post, only: [:show, :edit, :update, :destroy]
+    load_and_authorize_resource
 
     # GET /posts
     def index

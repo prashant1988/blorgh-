@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141204114042) do
+ActiveRecord::Schema.define(version: 20141209092948) do
 
   create_table "blorgh_comments", force: true do |t|
     t.integer  "post_id"
@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 20141204114042) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "role"
   end
 
   add_index "blorgh_masters", ["email"], name: "index_blorgh_masters_on_email", unique: true
