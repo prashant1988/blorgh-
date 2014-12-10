@@ -7,10 +7,10 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<%- flash.each do |name, msg| -%>
+	<% flash.each do |name, msg| %>
 	    <%= content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String) %>
-    <%- end -%>  
-    
+    <% end %>  
+
 	<% if master_signed_in? %>
 	  Logged in as <strong><%= current_master.email %></strong>.
 	  <ul class="nav nav-tabs">
@@ -28,3 +28,5 @@
 
 </body>
 </html>
+
+
