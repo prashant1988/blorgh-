@@ -14,3 +14,4 @@ gemspec
 # gem 'debugger'
 gem 'jquery-rails'
 gem 'cancan'
+gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"

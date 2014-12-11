@@ -1,0 +1,25 @@
+<h1>Listing products</h1>
+
+<div class="list_pro" >  
+  <table>
+    <tr>
+      <% @products.each_with_index do |product,index| %>
+        <% index+=1 %>
+        <td style="width:230px; height:auto; border:1px dotted; ">
+          <%= link_to (image_tag product.avatar.url(:thumb)),product %>
+          </br>
+          <%= link_to (product.name),product %>
+          </br>
+          <%= number_to_currency(product.price, :unit => "$") %>  
+        </td>
+        <%if index%4 == 0 %>
+          <tr></br></tr>
+        <%end%>
+      <% end %>
+    </tr>
+  </table>
+</div> 
+
+<br>
+
+<%= link_to 'New Product', new_product_path %>

@@ -1,3 +1,13 @@
+GIT
+  remote: git://github.com/thoughtbot/paperclip.git
+  revision: 0f7380b3825fdc5ca310ae6bbde7e299a73733cd
+  specs:
+    paperclip (4.2.1)
+      activemodel (>= 3.0.0)
+      activesupport (>= 3.0.0)
+      cocaine (~> 0.5.5)
+      mime-types
+
 PATH
   remote: .
   specs:
@@ -39,6 +49,10 @@ GEM
     bcrypt (3.1.9)
     builder (3.2.2)
     cancan (1.6.10)
+    climate_control (0.0.3)
+      activesupport (>= 3.0)
+    cocaine (0.5.5)
+      climate_control (>= 0.0.3, < 1.0)
     devise (3.4.1)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -105,4 +119,5 @@ DEPENDENCIES
   blorgh!
   cancan
   jquery-rails
+  paperclip!
   sqlite3

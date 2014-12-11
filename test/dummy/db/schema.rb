@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141209092948) do
+ActiveRecord::Schema.define(version: 20141210074359) do
 
   create_table "blorgh_comments", force: true do |t|
     t.integer  "post_id"
@@ -45,6 +45,18 @@ ActiveRecord::Schema.define(version: 20141209092948) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "author_id"
+  end
+
+  create_table "blorgh_products", force: true do |t|
+    t.string   "name"
+    t.float    "price"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "avatar_file_name"
+    t.string   "avatar_content_type"
+    t.integer  "avatar_file_size"
+    t.datetime "avatar_updated_at"
   end
 
   create_table "blorgh_users", force: true do |t|

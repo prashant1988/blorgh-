@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
-  root to: "blorgh/posts#index"
+  
   mount Blorgh::Engine => "/blorgh"
+
+  root to: "blorgh/products#index"
 end
